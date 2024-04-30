@@ -17,10 +17,10 @@ const saludoIndex = (req, res) => {
 
 const router = Router();
 
-router.get('/', saludoIndex);
+router.get('/api', saludoIndex);
 
-router.use('/users', userRouter);
-router.use('/posts', postRouter);
+router.use('/api/users', userRouter);
+router.use('/api/posts', postRouter);
 
 
 module.exports = router;
